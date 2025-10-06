@@ -1,0 +1,110 @@
+.appContainer {
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+form {
+  display: none;
+}
+
+.formItem {
+  display: flex;
+  align-items: center;
+}
+
+.formItem > label {
+  min-width: 120px;
+}
+
+.formItem > input {
+  flex: 1;
+  padding: 2px;
+}
+
+.formButton {
+  background-color: #ddd;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  align-self: end;
+}
+
+.formButton:hover {
+  cursor: pointer;
+  outline: 1px solid black;
+  background-color: #ccc;
+}
+
+.textAreaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: .5rem;
+}
+
+.textAreaItem > textArea {
+  min-height: 64px;
+  resize: none;
+  padding: 4px;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
+}
+
+.entryCard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.entryCard:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.formHeader > button {
+  width: 24px;
+  height: 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ddd;
+}
+
+.formHeader > button:hover {
+  background-color: #ccc;
+  outline: 1px solid black;
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.delete {
+  align-self: end;
+  background-color: tomato;
+  border: none;
+  padding-inline: 8px;
+  border-radius: 4px;
+}
+
+.delete:hover {
+  outline: 1px solid black;
+  cursor: pointer;
+}
